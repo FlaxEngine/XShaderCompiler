@@ -82,6 +82,7 @@
     <ClCompile Include="src\Compiler\IndentHandler.cpp" />
     <ClCompile Include="src\Compiler\JoinString.cpp" />
     <ClCompile Include="src\Compiler\Log.cpp" />
+    <ClCompile Include="src\Compiler\Platform\Win32\Win32ConsoleManip.cpp" />
     <ClCompile Include="src\Compiler\Reflection.cpp" />
     <ClCompile Include="src\Compiler\ReflectionPrinter.cpp" />
     <ClCompile Include="src\Compiler\Report\Report.cpp" />
