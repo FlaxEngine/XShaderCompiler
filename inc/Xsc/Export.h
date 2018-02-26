@@ -8,6 +8,9 @@
 #ifndef XSC_EXPORT_H
 #define XSC_EXPORT_H
 
+#if defined(_MSC_VER)
+#define _CRT_SECURE_NO_WARNINGS
+#endif
 
 #if defined(_MSC_VER) && defined(XSC_SHARED_LIB)
 #   define XSC_EXPORT __declspec(dllexport)
