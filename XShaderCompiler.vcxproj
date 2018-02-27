@@ -280,6 +280,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>XSC_ENABLE_LANGUAGE_EXT;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src/Compiler;src/Compiler/AST;src/Compiler/Backend;src/Compiler/CFG;src/Compiler/Frontend;src/Compiler/Report;src/Compiler/AST/Visitor;src/Compiler/Backend/GLSL;src/Compiler/Frontend/GLSL;src/Compiler/Frontend/HLSL;src/Compiler/Debugger;src/Compiler/Shell;external/SPIR-V/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <StringPooling>true</StringPooling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -294,6 +297,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>XSC_ENABLE_LANGUAGE_EXT;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src/Compiler;src/Compiler/AST;src/Compiler/Backend;src/Compiler/CFG;src/Compiler/Frontend;src/Compiler/Report;src/Compiler/AST/Visitor;src/Compiler/Backend/GLSL;src/Compiler/Frontend/GLSL;src/Compiler/Frontend/HLSL;src/Compiler/Debugger;src/Compiler/Shell;external/SPIR-V/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <StringPooling>true</StringPooling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -310,6 +316,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>XSC_ENABLE_LANGUAGE_EXT;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src/Compiler;src/Compiler/AST;src/Compiler/Backend;src/Compiler/CFG;src/Compiler/Frontend;src/Compiler/Report;src/Compiler/AST/Visitor;src/Compiler/Backend/GLSL;src/Compiler/Frontend/GLSL;src/Compiler/Frontend/HLSL;src/Compiler/Debugger;src/Compiler/Shell;external/SPIR-V/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <StringPooling>true</StringPooling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -328,6 +337,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>XSC_ENABLE_LANGUAGE_EXT;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src/Compiler;src/Compiler/AST;src/Compiler/Backend;src/Compiler/CFG;src/Compiler/Frontend;src/Compiler/Report;src/Compiler/AST/Visitor;src/Compiler/Backend/GLSL;src/Compiler/Frontend/GLSL;src/Compiler/Frontend/HLSL;src/Compiler/Debugger;src/Compiler/Shell;external/SPIR-V/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <StringPooling>true</StringPooling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
