@@ -1223,6 +1223,9 @@ void GLSLGenerator::WriteProgramHeaderVersion()
 
 void GLSLGenerator::WriteProgramHeaderComment()
 {
+    if (!writeGeneratorHeader_)
+        return;
+
     /* Write header */
     if (entryPointName_.empty())
         WriteComment("GLSL " + ToString(GetShaderTarget()));

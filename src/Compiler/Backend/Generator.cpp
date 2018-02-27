@@ -33,6 +33,7 @@ bool Generator::GenerateCode(
     warnings_                   = inputDesc.warnings;
     allowBlanks_                = outputDesc.formatting.blanks;
     allowLineSeparation_        = outputDesc.formatting.lineSeparation;
+    writeGeneratorHeader_       = outputDesc.formatting.writeGeneratorHeader;
     writer_.newLineOpenScope    = outputDesc.formatting.newLineOpenScope;
     program_                    = &program;
 

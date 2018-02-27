@@ -137,6 +137,9 @@ struct Formatting
 
     //! If true, the '{'-braces for an open scope gets its own line. If false, braces are written like in Java coding conventions. By default true.
     bool        newLineOpenScope    = true;
+
+    //! If true, the generator header comment with metadata will be added on top of the output shader source. If false, no header comment will be added. By default true.
+    bool        writeGeneratorHeader = true;
 };
 
 //! Structure for additional translation options.

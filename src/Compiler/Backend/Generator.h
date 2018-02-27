@@ -103,6 +103,10 @@ class Generator : protected VisitorTracker
         bool IsFragmentShader() const;
         bool IsComputeShader() const;
 
+    protected:
+
+        bool                        writeGeneratorHeader_   = true;
+
     private:
 
         /*
