@@ -422,17 +422,25 @@ IMPLEMENT_VISIT_PROC(BufferDeclStmnt)
 
 IMPLEMENT_VISIT_PROC(VarDecl)
 {
+    /*
     if (ast->flags(AST::isReachable))
     {
         if (auto typeSpecifier = ast->FetchTypeSpecifier())
         {
             if (typeSpecifier->isUniform)
             {
-                /* Add variable as uniform */
-                data_->uniforms.push_back(ast->ident);
+                DataType baseType = DataType::Undefined;
+
+                // Add variable as uniform
+                Reflection::Uniform uniform;
+                uniform.ident = ast->ident;
+                uniform.type = Reflection::UniformType::Variable;
+                uniform.baseType = (int)DataTypeToReflType(ast->FetchTypeSpecifier());
+                data_->uniforms.push_back(uniform);
             }
         }
     }
+    */
 }
 
 #undef IMPLEMENT_VISIT_PROC

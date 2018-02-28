@@ -165,7 +165,7 @@ static void CopyReflection(const Xsc::Reflection::ReflectionData& src, struct Xs
         g_compilerContext.macros.push_back(s.c_str());
 
     for (const auto& s : src.uniforms)
-        g_compilerContext.uniforms.push_back(s.c_str());
+        g_compilerContext.uniforms.push_back(s.ident.c_str());
 
     for (const auto& s : src.textures)
         g_compilerContext.textures.push_back({ s.ident.c_str(), s.location });
