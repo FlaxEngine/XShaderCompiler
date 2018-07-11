@@ -197,6 +197,9 @@ struct Options
 
     //! If true, the source code is only validated, but no output code will be generated. By default false.
     bool    validateOnly            = false;
+
+    //! If true, the generator header with metadata is written as first comment to the output. By default true.
+    bool    writeGeneratorHeader    = true;
 };
 
 //! Name mangling descriptor structure for shader input/output variables (also referred to as "varyings"), temporary variables, and reserved keywords.
@@ -256,7 +259,7 @@ struct ShaderInput
 
     //! Specifies the input shader version (e.g. InputShaderVersion::HLSL5 for "HLSL 5"). By default InputShaderVersion::HLSL5.
     InputShaderVersion              shaderVersion       = InputShaderVersion::HLSL5;
-    
+
     //! Specifies the target shader (Vertex, Fragment etc.). By default ShaderTarget::Undefined.
     ShaderTarget                    shaderTarget        = ShaderTarget::Undefined;
 
@@ -322,7 +325,7 @@ struct ShaderOutput
 
     //! Output code formatting descriptor.
     Formatting                  formatting;
-    
+
     //! Specifies the options for name mangling.
     NameMangling                nameMangling;
 };
